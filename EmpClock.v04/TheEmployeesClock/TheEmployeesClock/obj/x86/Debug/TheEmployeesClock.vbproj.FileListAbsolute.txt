@@ -58,3 +58,17 @@ C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v
 C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.exe
 C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.xml
 C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.pdb
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\bin\Debug\TheEmployeesClock.dB.accdb
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\bin\Debug\TheEmployeesClock.exe
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\bin\Debug\TheEmployeesClock.pdb
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\bin\Debug\TheEmployeesClock.xml
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmManualAdd.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmNewProject.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmNewClient.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmNewEmp.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmEmpsClock.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmUpdateClient.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmUpdateEmp.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.frmUpdateProject.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.Resources.resources
+C:\Users\Catherine\Dropbox\Public\MIS 740 Group Project\MIS-Emp-Clock\EmpClock.v04\TheEmployeesClock\TheEmployeesClock\obj\x86\Debug\TheEmployeesClock.vbproj.GenerateResource.Cache

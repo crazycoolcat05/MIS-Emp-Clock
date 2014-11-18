@@ -22,7 +22,6 @@ Partial Class frmNewEmp
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -44,14 +43,8 @@ Partial Class frmNewEmp
         Me.lblEmpPay = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me._TheEmployeesClock_dBDataSet = New TheEmployeesClock._TheEmployeesClock_dBDataSet()
-        Me.EmployeesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EmployeesTableAdapter = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.EmployeesTableAdapter()
-        Me.TableAdapterManager = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager()
         Me.lblEmpDept = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        CType(Me._TheEmployeesClock_dBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmployeesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button3
@@ -83,7 +76,6 @@ Partial Class frmNewEmp
         '
         'TextBox6
         '
-        Me.TextBox6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_zip", True))
         Me.TextBox6.Location = New System.Drawing.Point(138, 216)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(91, 20)
@@ -91,7 +83,6 @@ Partial Class frmNewEmp
         '
         'TextBox5
         '
-        Me.TextBox5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_state", True))
         Me.TextBox5.Location = New System.Drawing.Point(138, 190)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(51, 20)
@@ -99,7 +90,6 @@ Partial Class frmNewEmp
         '
         'TextBox4
         '
-        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_city", True))
         Me.TextBox4.Location = New System.Drawing.Point(138, 164)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
@@ -107,7 +97,6 @@ Partial Class frmNewEmp
         '
         'TextBox3
         '
-        Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_address", True))
         Me.TextBox3.Location = New System.Drawing.Point(138, 138)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(168, 20)
@@ -115,7 +104,6 @@ Partial Class frmNewEmp
         '
         'txtEmpNameL
         '
-        Me.txtEmpNameL.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_lname", True))
         Me.txtEmpNameL.Location = New System.Drawing.Point(138, 53)
         Me.txtEmpNameL.Name = "txtEmpNameL"
         Me.txtEmpNameL.Size = New System.Drawing.Size(100, 20)
@@ -123,7 +111,6 @@ Partial Class frmNewEmp
         '
         'txtEmpNameF
         '
-        Me.txtEmpNameF.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_fname", True))
         Me.txtEmpNameF.Location = New System.Drawing.Point(138, 27)
         Me.txtEmpNameF.Name = "txtEmpNameF"
         Me.txtEmpNameF.Size = New System.Drawing.Size(100, 20)
@@ -194,7 +181,6 @@ Partial Class frmNewEmp
         '
         'TextBox7
         '
-        Me.TextBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_id", True))
         Me.TextBox7.Location = New System.Drawing.Point(138, 79)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
@@ -202,7 +188,6 @@ Partial Class frmNewEmp
         '
         'TextBox8
         '
-        Me.TextBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_salary", True))
         Me.TextBox8.Location = New System.Drawing.Point(138, 268)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(91, 20)
@@ -228,34 +213,10 @@ Partial Class frmNewEmp
         '
         'TextBox9
         '
-        Me.TextBox9.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_email", True))
         Me.TextBox9.Location = New System.Drawing.Point(137, 242)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(157, 20)
         Me.TextBox9.TabIndex = 35
-        '
-        '_TheEmployeesClock_dBDataSet
-        '
-        Me._TheEmployeesClock_dBDataSet.DataSetName = "_TheEmployeesClock_dBDataSet"
-        Me._TheEmployeesClock_dBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EmployeesBindingSource
-        '
-        Me.EmployeesBindingSource.DataMember = "Employees"
-        Me.EmployeesBindingSource.DataSource = Me._TheEmployeesClock_dBDataSet
-        '
-        'EmployeesTableAdapter
-        '
-        Me.EmployeesTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ClientsTableAdapter = Nothing
-        Me.TableAdapterManager.EmployeesTableAdapter = Me.EmployeesTableAdapter
-        Me.TableAdapterManager.ProjectsTableAdapter = Nothing
-        Me.TableAdapterManager.Submitted_WorkTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'lblEmpDept
         '
@@ -268,7 +229,6 @@ Partial Class frmNewEmp
         '
         'TextBox1
         '
-        Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmployeesBindingSource, "emp_id", True))
         Me.TextBox1.Location = New System.Drawing.Point(138, 109)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
@@ -304,8 +264,6 @@ Partial Class frmNewEmp
         Me.Controls.Add(Me.lblEmpNameF)
         Me.Name = "frmNewEmp"
         Me.Text = "New Employee"
-        CType(Me._TheEmployeesClock_dBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmployeesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -331,10 +289,6 @@ Partial Class frmNewEmp
     Friend WithEvents lblEmpPay As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents _TheEmployeesClock_dBDataSet As TheEmployeesClock._TheEmployeesClock_dBDataSet
-    Friend WithEvents EmployeesBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents EmployeesTableAdapter As TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.EmployeesTableAdapter
-    Friend WithEvents TableAdapterManager As TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager
     Friend WithEvents lblEmpDept As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class
