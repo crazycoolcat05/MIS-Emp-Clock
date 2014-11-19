@@ -26,6 +26,7 @@ Partial Class frmEmpsClock
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEmpsClock))
         Me.tabEmpsClock = New System.Windows.Forms.TabControl()
         Me.tabEmployee = New System.Windows.Forms.TabPage()
+        Me.Submitted_WorkDataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnPause = New System.Windows.Forms.Button()
         Me.lblSubmittedWorkEmp = New System.Windows.Forms.Label()
         Me.lstProject = New System.Windows.Forms.ListBox()
@@ -43,19 +44,6 @@ Partial Class frmEmpsClock
         Me.lblProfile = New System.Windows.Forms.Label()
         Me.tabAdmin = New System.Windows.Forms.TabPage()
         Me.Submitted_WorkDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Submitted_WorkBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._TheEmployeesClock_dBDataSet = New TheEmployeesClock._TheEmployeesClock_dBDataSet()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnManualAdd = New System.Windows.Forms.Button()
         Me.lblShowTimeA = New System.Windows.Forms.Label()
@@ -72,8 +60,6 @@ Partial Class frmEmpsClock
         Me.lblProjects = New System.Windows.Forms.Label()
         Me.lblClients = New System.Windows.Forms.Label()
         Me.lbEmployees = New System.Windows.Forms.Label()
-        Me.Submitted_WorkTableAdapter = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.Submitted_WorkTableAdapter()
-        Me.TableAdapterManager = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager()
         Me.Submitted_WorkBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -87,7 +73,8 @@ Partial Class frmEmpsClock
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Submitted_WorkBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.Submitted_WorkDataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Submitted_WorkBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me._TheEmployeesClock_dBDataSet = New TheEmployeesClock._TheEmployeesClock_dBDataSet()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -99,15 +86,31 @@ Partial Class frmEmpsClock
         Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Submitted_WorkTableAdapter = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.Submitted_WorkTableAdapter()
+        Me.TableAdapterManager = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager()
+        Me.EmployeesTableAdapter = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.EmployeesTableAdapter()
         Me.tabEmpsClock.SuspendLayout()
         Me.tabEmployee.SuspendLayout()
+        CType(Me.Submitted_WorkDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabAdmin.SuspendLayout()
         CType(Me.Submitted_WorkDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Submitted_WorkBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._TheEmployeesClock_dBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Submitted_WorkBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Submitted_WorkBindingNavigator.SuspendLayout()
-        CType(Me.Submitted_WorkDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Submitted_WorkBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me._TheEmployeesClock_dBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmployeesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tabEmpsClock
@@ -147,6 +150,17 @@ Partial Class frmEmpsClock
         Me.tabEmployee.Text = "Employees"
         Me.tabEmployee.UseVisualStyleBackColor = True
         '
+        'Submitted_WorkDataGridView1
+        '
+        Me.Submitted_WorkDataGridView1.AutoGenerateColumns = False
+        Me.Submitted_WorkDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Submitted_WorkDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22})
+        Me.Submitted_WorkDataGridView1.DataSource = Me.Submitted_WorkBindingSource
+        Me.Submitted_WorkDataGridView1.Location = New System.Drawing.Point(11, 242)
+        Me.Submitted_WorkDataGridView1.Name = "Submitted_WorkDataGridView1"
+        Me.Submitted_WorkDataGridView1.Size = New System.Drawing.Size(1157, 194)
+        Me.Submitted_WorkDataGridView1.TabIndex = 16
+        '
         'btnPause
         '
         Me.btnPause.Location = New System.Drawing.Point(772, 111)
@@ -175,6 +189,7 @@ Partial Class frmEmpsClock
         '
         'lstProfile
         '
+        Me.lstProfile.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.EmployeesBindingSource, "emp_id", True))
         Me.lstProfile.FormattingEnabled = True
         Me.lstProfile.Location = New System.Drawing.Point(122, 27)
         Me.lstProfile.Name = "lstProfile"
@@ -319,82 +334,6 @@ Partial Class frmEmpsClock
         Me.Submitted_WorkDataGridView.Size = New System.Drawing.Size(1157, 219)
         Me.Submitted_WorkDataGridView.TabIndex = 16
         '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "emp_id"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "emp_id"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "project_id"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "project_id"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "time_startdate"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "time_startdate"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "time_enddate"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "time_enddate"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "time_startime"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "time_startime"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "time_endtime"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "time_endtime"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "total_time_worked"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "total_time_worked"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "approval_status"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "approval_status"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "emp_payment_status"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "emp_payment_status"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "client_payment_status"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "client_payment_status"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        '
-        'Submitted_WorkBindingSource
-        '
-        Me.Submitted_WorkBindingSource.DataMember = "Submitted_Work"
-        Me.Submitted_WorkBindingSource.DataSource = Me._TheEmployeesClock_dBDataSet
-        '
-        '_TheEmployeesClock_dBDataSet
-        '
-        Me._TheEmployeesClock_dBDataSet.DataSetName = "_TheEmployeesClock_dBDataSet"
-        Me._TheEmployeesClock_dBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'btnSearch
         '
         Me.btnSearch.Location = New System.Drawing.Point(1097, 185)
@@ -536,19 +475,6 @@ Partial Class frmEmpsClock
         Me.lbEmployees.TabIndex = 0
         Me.lbEmployees.Text = "Employees"
         '
-        'Submitted_WorkTableAdapter
-        '
-        Me.Submitted_WorkTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ClientsTableAdapter = Nothing
-        Me.TableAdapterManager.EmployeesTableAdapter = Nothing
-        Me.TableAdapterManager.ProjectsTableAdapter = Nothing
-        Me.TableAdapterManager.Submitted_WorkTableAdapter = Me.Submitted_WorkTableAdapter
-        Me.TableAdapterManager.UpdateOrder = TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
         'Submitted_WorkBindingNavigator
         '
         Me.Submitted_WorkBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -660,16 +586,15 @@ Partial Class frmEmpsClock
         Me.Submitted_WorkBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.Submitted_WorkBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'Submitted_WorkDataGridView1
+        'Submitted_WorkBindingSource
         '
-        Me.Submitted_WorkDataGridView1.AutoGenerateColumns = False
-        Me.Submitted_WorkDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Submitted_WorkDataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22})
-        Me.Submitted_WorkDataGridView1.DataSource = Me.Submitted_WorkBindingSource
-        Me.Submitted_WorkDataGridView1.Location = New System.Drawing.Point(11, 242)
-        Me.Submitted_WorkDataGridView1.Name = "Submitted_WorkDataGridView1"
-        Me.Submitted_WorkDataGridView1.Size = New System.Drawing.Size(1157, 194)
-        Me.Submitted_WorkDataGridView1.TabIndex = 16
+        Me.Submitted_WorkBindingSource.DataMember = "Submitted_Work"
+        Me.Submitted_WorkBindingSource.DataSource = Me._TheEmployeesClock_dBDataSet
+        '
+        '_TheEmployeesClock_dBDataSet
+        '
+        Me._TheEmployeesClock_dBDataSet.DataSetName = "_TheEmployeesClock_dBDataSet"
+        Me._TheEmployeesClock_dBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'DataGridViewTextBoxColumn12
         '
@@ -737,6 +662,94 @@ Partial Class frmEmpsClock
         Me.DataGridViewTextBoxColumn22.HeaderText = "client_payment_status"
         Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
         '
+        'EmployeesBindingSource
+        '
+        Me.EmployeesBindingSource.DataMember = "Employees"
+        Me.EmployeesBindingSource.DataSource = Me._TheEmployeesClock_dBDataSet
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "emp_id"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "emp_id"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "project_id"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "project_id"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "time_startdate"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "time_startdate"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "time_enddate"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "time_enddate"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "time_startime"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "time_startime"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "time_endtime"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "time_endtime"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "total_time_worked"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "total_time_worked"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "approval_status"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "approval_status"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "emp_payment_status"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "emp_payment_status"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "client_payment_status"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "client_payment_status"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        '
+        'Submitted_WorkTableAdapter
+        '
+        Me.Submitted_WorkTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ClientsTableAdapter = Nothing
+        Me.TableAdapterManager.EmployeesTableAdapter = Nothing
+        Me.TableAdapterManager.ProjectsTableAdapter = Nothing
+        Me.TableAdapterManager.Submitted_WorkTableAdapter = Me.Submitted_WorkTableAdapter
+        Me.TableAdapterManager.UpdateOrder = TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'EmployeesTableAdapter
+        '
+        Me.EmployeesTableAdapter.ClearBeforeFill = True
+        '
         'frmEmpsClock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -749,15 +762,16 @@ Partial Class frmEmpsClock
         Me.tabEmpsClock.ResumeLayout(False)
         Me.tabEmployee.ResumeLayout(False)
         Me.tabEmployee.PerformLayout()
+        CType(Me.Submitted_WorkDataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabAdmin.ResumeLayout(False)
         Me.tabAdmin.PerformLayout()
         CType(Me.Submitted_WorkDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Submitted_WorkBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._TheEmployeesClock_dBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Submitted_WorkBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Submitted_WorkBindingNavigator.ResumeLayout(False)
         Me.Submitted_WorkBindingNavigator.PerformLayout()
-        CType(Me.Submitted_WorkDataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Submitted_WorkBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me._TheEmployeesClock_dBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmployeesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -837,5 +851,7 @@ Partial Class frmEmpsClock
     Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn21 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn22 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeesBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents EmployeesTableAdapter As TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.EmployeesTableAdapter
 
 End Class
