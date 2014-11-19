@@ -101,6 +101,7 @@ Partial Class frmEmpsClock
         Me.Submitted_WorkTableAdapter = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.Submitted_WorkTableAdapter()
         Me.TableAdapterManager = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.TableAdapterManager()
         Me.EmployeesTableAdapter = New TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.EmployeesTableAdapter()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.tabEmpsClock.SuspendLayout()
         Me.tabEmployee.SuspendLayout()
         CType(Me.Submitted_WorkDataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,6 +127,7 @@ Partial Class frmEmpsClock
         'tabEmployee
         '
         Me.tabEmployee.AutoScroll = True
+        Me.tabEmployee.Controls.Add(Me.ComboBox1)
         Me.tabEmployee.Controls.Add(Me.Submitted_WorkDataGridView1)
         Me.tabEmployee.Controls.Add(Me.btnPause)
         Me.tabEmployee.Controls.Add(Me.lblSubmittedWorkEmp)
@@ -750,6 +752,14 @@ Partial Class frmEmpsClock
         '
         Me.EmployeesTableAdapter.ClearBeforeFill = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(103, 140)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(178, 21)
+        Me.ComboBox1.TabIndex = 17
+        '
         'frmEmpsClock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -853,5 +863,6 @@ Partial Class frmEmpsClock
     Friend WithEvents DataGridViewTextBoxColumn22 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EmployeesBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents EmployeesTableAdapter As TheEmployeesClock._TheEmployeesClock_dBDataSetTableAdapters.EmployeesTableAdapter
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class
